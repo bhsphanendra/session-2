@@ -1,0 +1,21 @@
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+  int i,j,s,n,m;
+  scanf("%d",&n);
+  for(i=1;i<=n;i++)
+  {
+    scanf("%d",&m);
+    j=0;
+    s=0;
+    while(m>0)
+    {
+      j=m%10;
+      s=s+j;
+      m=m/10;
+   }
+    printf("%d\n",s);
+  }
+  return 0;
+}
